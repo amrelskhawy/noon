@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+:root {
+  --main-color: #FEEE00;
+  --white-light: #fcfbf4;
+}
+
+body {
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+
+}
+
+input {
+  outline: none;
+  border: none;
+}

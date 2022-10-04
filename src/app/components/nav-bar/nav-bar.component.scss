@@ -1,0 +1,42 @@
+.nav-top {
+  height: 80px;
+  background: var(--main-color);
+  color: #222;
+}
+.nav-bottom {
+  background: var(--white-light);
+  max-width: 1920px;
+  margin: 0px auto;
+  display: flex;
+  position: relative;
+}
+
+.nav-bottom > ul {
+  flex: 1 1 0%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  scroll-behavior: smooth;
+}
+.eg-flag {
+  width: 60px;
+  height: 100%;
+}
+.noon-logo {
+  width: 100px ;
+}
+.icon {
+  width: 20px;
+}
+
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: 300ms;
+  &:hover {
+    opacity: 1;
+  }
+}

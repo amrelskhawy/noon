@@ -1,0 +1,21 @@
+<div class="offers">
+  <div>
+    <img src="https://f.nooncdn.com/cms/pages/20220915/db40b276b580ce6c408b1a1b90dec594/ar_dk_eg-toggle-01.png"
+   class="ads-header w-100" alt="">
+  </div>
+  <div *ngFor="let item of myData['getMostOrderedBranch'].data">
+
+  </div>
+  <div style="margin-top: -9px;">
+    {{ myData['getMostOrderedBranch']?.data | json}}
+    <swiper [slidesPerView]="1" [spaceBetween]="30" [loop]="true" [pagination]="{clickable: true}" [navigation]="true"
+      class="mySwiper" #swiper class="mySwiper slider">
+      <ng-template *ngFor="let offer of myData.getMostOrderedBranch.data " class="slider-img" swiperSlide>
+        <app-offer>
+        </app-offer>
+        <img  src="https://satatechnologygroup.net:3301/{{item.cover}}" alt="" >
+      </ng-template>
+
+    </swiper>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="sub-nav-link">
+    <ul class="sub-nav-link-container">
+        <h4>الفئات</h4>
+        <li class="nav-link" *ngFor="let item of data">
+            <a href="">{{item}}</a>
+        </li>
+    </ul>
+    <div class="pics">
+        <h4>أفضل الماركات</h4>
+        <div class="all-pics">
+            <div class="pics-container">
+                <div class="imgContainer" *ngFor="let pic of pics">
+                    <img src="{{pic}}" alt="">
+                </div>
+            </div>
+            <div class="examples">
+                <div class="imgContainer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+
+@use '../../../../../styles.scss';
+.categories {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    background: #fffde6;
+    padding: 1rem;
+
+    .category {
+        @extend .flex;
+        flex-direction: column;
+        gap: 10px;
+        cursor: pointer;
+        transition: 300ms;
+
+        &:hover {
+            opacity: 0.8;
+        }
+        .category-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .category-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+
+}
+
+@media (max-width: 755px) {
+    .categories {
+        gap: 1rem;
+    }
+    .category-img {
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .category-img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}

@@ -1,0 +1,97 @@
+<nav class="w-100 d-flex flex-column">
+    <div class="nav-top d-flex align-items-center flex-row container-fluid justify-content-between gap-3 align-items-center">
+        <div class="d-flex justify-content-between align-items-center gap-3">
+            <span class="">
+                <img src="https://f.nooncdn.com/s/app/com/noon/design-system/logos/noon-logo-ar.svg" alt="" class="noon-logo">
+            </span>
+            <div class="d-flex gap-2 align-items-center">
+                <img class="eg-flag flex" src="../../../../../assets/imgs/eg-flag.png" alt="">
+                <span class="delv">
+                    تسليم إلى <br />
+                    <span class="fw-bold">القاهره</span>
+                </span>
+            </div>
+
+        </div>
+        <div class=" flex-grow-1">
+            <input
+              type="search"
+              name="search"
+              placeholder="أنت بتدور على أيه؟"
+              class="w-100 p-2"
+
+            >
+        </div>
+        <div class="login-chart d-flex gap-1">
+            <span>English</span>|
+            <span>تسجيل الدخول
+                <img class=" icon" src="../../../../../assets/imgs/user.png" alt="">
+            </span>|
+            <span>عربة التسوق
+                <img class="icon" src="../../../../../assets/imgs/shopping-cart.png" alt="">
+            </span>
+        </div>
+    </div>
+
+    <div class="nav-bottom d-flex p-3 w-100 align-items-center">
+        <span class="all-categories fw-bold text-primary ">جميع الفئات</span>
+
+          <span class="mx-3 d-lg-none arrow" (click)="slide('right')"><</span>
+        <ul class="nav-links fw-bold justify-content-lg-start  d-lg-flex gap-3 my-auto "
+          id="nav-bottom-container"
+        >
+
+          <li class="nav-link ">الإلكترونات
+                <div class="sub-nav-link-container">
+<!--                    <Sublink [data]="electronics"></Sublink>-->
+                </div>
+            </li>
+            <li class="nav-link">موبايلات
+                <div class="sub-nav-link-container">
+<!--                    <Sublink [data]="phones"></Sublink>-->
+                </div>
+            </li>
+            <li class="nav-link">رجالية
+                <div class="sub-nav-link-container">
+<!--                    <Sublink [data]="men"></Sublink>-->
+                </div>
+            </li>
+            <li class="nav-link">نسائية
+                <div class="sub-nav-link-container">
+<!--                    <Sublink [data]="women"></Sublink>-->
+                </div>
+            </li>
+            <li class="nav-link">المنزل
+                <div class="sub-nav-link-container">
+<!--                    <Sublink [data]="home"></Sublink>-->
+                </div>
+            </li>
+            <li class="nav-link">الجمال و العطور
+                <div class="sub-nav-link-container">
+<!--                    <Sublink [data]="men"></Sublink>-->
+                </div>
+            </li>
+            <li class="nav-link">الاطفال و الالعاب
+                <div class="sub-nav-link-container">
+<!--                    <Sublink [data]="electronics"></Sublink>-->
+                </div>
+            </li>
+            <li class="nav-link">سوبر ماركت
+                <div class="sub-nav-link-container">
+<!--                    <Sublink [data]="home"></Sublink>-->
+                </div>
+            </li>
+            <li class="nav-link">بيع في نون
+                <div class="sub-nav-link-container">
+<!--                    <Sublink [data]="men"></Sublink>-->
+                </div>
+            </li>
+            <li class="nav-link offers">العروض
+                <div class="sub-nav-link-container">
+<!--                    <Sublink [data]="women"></Sublink>-->
+                </div>
+            </li>
+        </ul>
+      <span (click)="slide('left')"  class="mx-3 d-lg-none arrow">></span>
+    </div>
+</nav>

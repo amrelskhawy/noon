@@ -1,0 +1,33 @@
+<div class="favOffers-container">
+  <div class="favOffers-titles">
+    <h4 class="">عروضنا المفضلة</h4>
+    <span class="text-bg-primary">
+      تسوق الأن</span>
+  </div>
+  <div class="offers-boxes">
+    <div *ngFor="let item of bestSellers.MostSellItems.data" class="fav-offer-box">
+      <div class="imgContainer">
+        <img src="https://satatechnologygroup.net:3301/{{item.menu_categories_items?.photo}}" alt="" />
+      </div>
+      <div class="details">
+        <h5 class="title">{{item.menu_categories_items?.name}}</h5>
+        <span class="price">
+          {{item.price}} 
+          <span>جنيه</span>
+        </span>
+        <span class="price inst_price">
+          {{item.price + (item.price * .40)}} <span>جنيه</span>
+        </span>
+      </div>
+      <div class="moreDetails">
+        <span class="express">إكسبريس</span>
+        <span class="rate">
+          <img class="icon" src="../../../../../assets/imgs/star.png " style="top: 1px;" alt="">
+          4.5 <span 
+          style="color: rgba(177, 177, 177, 0.869); font-weight: lighter">(2)</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div>
