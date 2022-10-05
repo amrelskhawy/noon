@@ -5,12 +5,12 @@ import SwiperCore, { Navigation, Pagination } from "swiper";
 
 
 // install Swiper modules
-SwiperCore.use([Pagination, Navigation]);
+SwiperCore.use([Navigation]);
 
 @Component({
   selector: 'app-offersContainer',
   templateUrl: './Offers-container.component.html',
-  styleUrls: ['./Offers-container.component.css']
+  styleUrls: ['./Offers-container.component.scss']
 })
 export class OffersContainerComponent implements OnInit {
 
@@ -24,5 +24,9 @@ export class OffersContainerComponent implements OnInit {
       console.log(this.myData)
     }
     )
+  }
+  slide(direction: string) {
+    const mySlider: any = document.getElementById("mySlider")
+    mySlider.scrollLeft -= mySlider.offsetWidth;
   }
 }

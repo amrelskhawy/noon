@@ -1,0 +1,26 @@
+.slider-wrapper {
+  position: relative;
+
+.mySlider {
+  height: 250px;
+  flex: 1 1 0%;
+  white-space: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+}
+  .slider-btn {
+    top: 50%;
+    transform: translate(-50%,-50%);
+    &.right {
+      right: 0;
+    }
+    &.left {
+      left: 20px;
+    }
+  }
+}
+
+img {
+  object-fit: cover;
+}

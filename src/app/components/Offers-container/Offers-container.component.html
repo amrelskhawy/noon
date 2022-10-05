@@ -3,4 +3,19 @@
     <img src="https://f.nooncdn.com/cms/pages/20220915/db40b276b580ce6c408b1a1b90dec594/ar_dk_eg-toggle-01.png"
    class="ads-header w-100" alt="">
   </div>
+
+  <div class="slider-wrapper">
+    <div  *ngIf="myData && myData.getMostOrderedBranch"  class="mySlider w-100 overflow-hidden position-relative" id="mySlider">
+      <div class="slide w-100 h-100 text-center my-0 mx-auto d-inline-flex align-items-center justify-content-center overflow-hidden" *ngFor="let offer of myData.getMostOrderedBranch.data" swiperSlide>
+        <img class="w-100 h-100" src="https://satatechnologygroup.net:3301/{{offer.cover}}" />
+      </div>
+    </div>
+    <button class="slider-btn position-absolute right" (click)="slide('right')">
+      +
+    </button>
+    <button class="slider-btn position-absolute left"  (click)="slide('left')">
+      -
+    </button>
+  </div>
+
 </div>
