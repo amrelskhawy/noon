@@ -27,15 +27,13 @@
   }
 }
 
-.arrow {
-  width: 24px;
-}
 .nav-bottom {
   background: var(--white-light);
   max-width: 1920px;
   margin: 0px auto;
   display: flex;
   position: relative;
+  padding: 0 !important;
 }
 
 .nav-bottom > ul {
@@ -44,7 +42,6 @@
   overflow-x: scroll;
   overflow: hidden;
   display: flex;
-  position: relative;
   scroll-behavior: smooth;
 }
 .eg-flag {
@@ -59,18 +56,27 @@
 }
 
 .arrow {
-  font-size: 24px;
   cursor: pointer;
   opacity: 0.3;
   transition: 300ms;
+  width: 24px;
   &:hover {
     opacity: 1;
   }
 }
 
+
 .nav-link {
   cursor: pointer;
+  padding: 1rem 0.25rem;
+  .sub-nav-link-container {
+    display: none;
+  }
+
   &:hover {
+    > .sub-nav-link-container {
+      display: block;
+    }
 
   }
 }

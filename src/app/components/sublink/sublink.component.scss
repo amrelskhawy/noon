@@ -1,77 +1,46 @@
 .sub-nav-link {
-    display: flex;
-    position: absolute;
-    z-index: 4;
-    background-color: #fff;
-    padding: 20px;
-    top: 133px;
-    right: 0;
-    width: 100%;
-    gap: 1rem;
-    justify-content: space-around;
-
-    .all-pics {
-        display: flex;
-        gap: 1rem;
-        max-width: 60%;
-        .pics-container {
-            margin-top: 1.2rem;
-            display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 10px;
-            .imgContainer {
-                width: 250px;
-                height: 120px;
-                border: 1px solid #3b87c3 ;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-
-        }
-        .examples   {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 1rem;
-            .imgContainer {
-                width: 350px;
-                height: 100%;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-    
-    .sub-nav-link-container {
-        
-        display: flex !important;
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-    a {
-        color: #333;
-        font-weight: normal;
-        text-decoration: none;
-    }
+  top: 100%;
+  right: 0;
+  z-index: 999;
+  width: 100%;
 }
 
-@media (max-width: 1550px)  {
+.pics-container {
+  grid-template-columns: repeat(2,1fr);
+  img {
+    width: 80%;
+    max-width: 200px;
+    object-fit: cover;
+    max-height: 200px;
 
-    .examples {
-        width: fit-content;
-        .imgContainer {
-            display: flex;
-    gap: 1rem;
-        }
-    }
+  }
+}
 
-    .imgContainer {
-        width: 200px !important;
+@media (min-width: 700px) {
+  .pics-container {
+    grid-template-columns: repeat(3,1fr);
+  }
+  .sub-nav-link {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 460px) {
+  .sub-nav-link {
+    flex-direction: column !important;
+  }
+  img {
+    max-width: 100px;
+    max-height: 100px;
+
+  }
+
+  .pics {
+    padding: 0 1.5rem;
+    .all-pics {
+      justify-content: center;
+      align-items: center;
     }
+  }
+
 }

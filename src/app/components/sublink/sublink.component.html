@@ -1,21 +1,21 @@
-<div class="sub-nav-link">
-    <ul class="sub-nav-link-container">
-        <h4>الفئات</h4>
+<div class="sub-nav-link position-absolute d-flex flex-row  bg-white pt-4">
+    <ul class="sub-nav-link-container py-2 d-flex flex-column gap-2 px-4 mb-3">
+        <h4 class="fw-bold">الفئات</h4>
         <li class="nav-link" *ngFor="let item of data">
-            <a href="">{{item}}</a>
+            <a href="" class="text-decoration-none text-dark fw-normal">{{item}}</a>
         </li>
     </ul>
-    <div class="pics">
-        <h4>أفضل الماركات</h4>
+    <div class="pics py-2 d-flex flex-column ">
+        <h4 class="fw-bold mb-4">أفضل الماركات</h4>
         <div class="all-pics">
-            <div class="pics-container">
-                <div class="imgContainer" *ngFor="let pic of pics">
-                    <img src="{{pic}}" alt="">
+            <div class="pics-container d-grid gap-2 justify-content-between">
+                <div class="imgContainer" *ngFor="let pic of pics" >
+                    <img  src="{{pic}}" class="100 h-100" alt="">
                 </div>
             </div>
             <div class="examples">
                 <div class="imgContainer">
-                    
+
                 </div>
             </div>
         </div>
