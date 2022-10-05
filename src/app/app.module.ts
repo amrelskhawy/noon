@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http'
 import {OffersContainerComponent} from "./components/Offers-container/Offers-container.component";
 import { SwiperModule } from 'swiper/angular';
 import {OfferComponent} from "./components/offer/offer.component";
+import {CategoryComponent} from "./components/Category/Category.component";
+import {FavOffersComponent} from "./components/favOffers/favOffers.component";
 
 @NgModule({
   declarations: [
@@ -18,12 +20,13 @@ import {OfferComponent} from "./components/offer/offer.component";
     NavBarComponent,
     SublinkComponent,
     OffersContainerComponent,
-    OfferComponent
+    OfferComponent,
+    CategoryComponent,
+    FavOffersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
     HttpClientModule,
     SwiperModule,
 

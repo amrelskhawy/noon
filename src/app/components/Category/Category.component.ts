@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { MyDataService } from '../../services/my-data.service';
 
 @Component({
-  selector: 'Category',
+  selector: 'app-category',
   templateUrl: './Category.component.html',
   styleUrls: ['./Category.component.scss']
 })

@@ -1,29 +1,29 @@
-<div class="favOffers-container">
-  <div class="favOffers-titles">
+<div class="favOffers-container p-4">
+  <div class="favOffers-titles d-flex justify-content-between  mt-5">
     <h4 class="">عروضنا المفضلة</h4>
-    <span class="text-bg-primary">
+    <span class="py-2 px-4 border border-2 shop-now border-dark ">
       تسوق الأن</span>
   </div>
-  <div class="offers-boxes">
-    <div *ngFor="let item of bestSellers.MostSellItems.data" class="fav-offer-box">
-      <div class="imgContainer">
-        <img src="https://satatechnologygroup.net:3301/{{item.menu_categories_items?.photo}}" alt="" />
+  <div *ngIf="bestSellers && bestSellers.MostSellItems.data" class="offers-boxes d-flex mt-4 gap-2">
+    <div *ngFor="let item of bestSellers.MostSellItems.data " class="fav-offer-box d-flex justify-content-between flex-column flex-grow-1 mb-4">
+      <div class="imgContainer rounded-4 overflow-hidden">
+        <img class="img-fluid " src="https://satatechnologygroup.net:3301/{{item.menu_categories_items?.photo}}" alt="" />
       </div>
-      <div class="details">
+      <div class="details mt-2">
         <h5 class="title">{{item.menu_categories_items?.name}}</h5>
-        <span class="price">
-          {{item.price}} 
-          <span>جنيه</span>
+        <span class="price fs-5 fw-bold">
+          {{item.price}}
+          <span class="fs-6 fw-normal">جنيه</span>
         </span>
-        <span class="price inst_price">
+        <span class="price d-flex align-items-center gap-1 inst_price">
           {{item.price + (item.price * .40)}} <span>جنيه</span>
         </span>
       </div>
-      <div class="moreDetails">
+      <div class="moreDetails d-flex justify-content-between align-items-center">
         <span class="express">إكسبريس</span>
-        <span class="rate">
+        <span class="rate d-flex gap-1 justify-content-between align-items-center">
           <img class="icon" src="../../../../../assets/imgs/star.png " style="top: 1px;" alt="">
-          4.5 <span 
+          4.5 <span
           style="color: rgba(177, 177, 177, 0.869); font-weight: lighter">(2)</span>
         </span>
       </div>

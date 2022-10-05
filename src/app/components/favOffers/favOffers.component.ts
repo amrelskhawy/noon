@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { MyDataService } from '../../services/my-data.service';
 
 @Component({
-  selector: 'favOffers',
+  selector: 'app-favOffers',
   templateUrl: './favOffers.component.html',
   styleUrls: ['./favOffers.component.scss']
 })
