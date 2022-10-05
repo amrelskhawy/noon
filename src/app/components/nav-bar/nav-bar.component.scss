@@ -3,6 +3,33 @@
   background: var(--main-color);
   color: #222;
 }
+@media (max-width: 820px) {
+  .nav-top {
+    flex-direction: column !important;
+    height: fit-content;
+
+
+    .logoDeliverContainer {
+      width: 100% !important;
+      justify-content: space-between !important;
+
+    }
+
+    .inputContainer {
+      flex: 1;
+      width: 100%;
+        input {
+          flex: 1;
+          width: 100%;
+        }
+    }
+
+  }
+}
+
+.arrow {
+  width: 24px;
+}
 .nav-bottom {
   background: var(--white-light);
   max-width: 1920px;
@@ -38,5 +65,12 @@
   transition: 300ms;
   &:hover {
     opacity: 1;
+  }
+}
+
+.nav-link {
+  cursor: pointer;
+  &:hover {
+
   }
 }
