@@ -4,17 +4,17 @@
    class="ads-header w-100" alt="">
   </div>
 
-  <div class="slider-wrapper">
-    <div  *ngIf="myData && myData.getMostOrderedBranch"  class="mySlider w-100 overflow-hidden position-relative" id="mySlider">
+  <div *ngIf="myData && myData.getMostOrderedBranch" class="slider-wrapper position-relative">
+    <div class="mySlider w-100 overflow-hidden position-relative" id="mySlider">
       <div class="slide w-100 h-100 text-center my-0 mx-auto d-inline-flex align-items-center justify-content-center overflow-hidden" *ngFor="let offer of myData.getMostOrderedBranch.data" swiperSlide>
         <img class="w-100 h-100" src="https://satatechnologygroup.net:3301/{{offer.cover}}" />
       </div>
     </div>
-    <button class="slider-btn position-absolute right" (click)="slide('right')">
-      +
+    <button class="slider-btn p-2 rounded-circle position-absolute right" (click)="slide('right')">
+      <img src="../../../assets/imgs/arrow.png" alt="">
     </button>
-    <button class="slider-btn position-absolute left"  (click)="slide('left')">
-      -
+    <button class="slider-btn position-absolute left rounded-circle"  (click)="slide('left')">
+      <img src="../../../assets/imgs/arrow.png" alt="">
     </button>
   </div>
 

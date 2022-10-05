@@ -27,6 +27,6 @@ export class OffersContainerComponent implements OnInit {
   }
   slide(direction: string) {
     const mySlider: any = document.getElementById("mySlider")
-    mySlider.scrollLeft -= mySlider.offsetWidth;
+    return direction === "right" ?  mySlider.scrollLeft += mySlider.offsetWidth:mySlider.scrollLeft -= mySlider.offsetWidth;
   }
 }
