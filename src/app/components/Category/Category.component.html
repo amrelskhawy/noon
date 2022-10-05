@@ -1,7 +1,7 @@
-<div class="categories">
-  <div class="category" *ngFor="let category of categoryData">
-    <img class="category-img" src="https://satatechnologygroup.net:3301/{{category.photo}}" alt="">
-    <p class="category-title">
+<div class="categories nt-4 d-flex justify-content-center gap-4 p-2">
+  <div class="category d-flex justify-content-center align-items-center flex-column gap-4 " *ngFor="let category of categoryData">
+    <img class="category-img rounded rounded-circle " src="https://satatechnologygroup.net:3301/{{category.photo}}" alt="">
+    <p class="category-title fs-4 fw-bold">
       {{category.name}}
     </p>
   </div>
