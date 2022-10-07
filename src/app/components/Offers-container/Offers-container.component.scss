@@ -49,9 +49,9 @@
 }
 
 .swiper-button-prev,
-.swiper-button-next {
-  width: 4rem;
-  height: 4rem;
+.swiper-button-next{
+  width: 2.5rem;
+  height: 2.5rem;
   background: #fff;
   border-radius: 50%;
   color: #000;
@@ -60,9 +60,14 @@
   align-items: center;
   opacity: 0.6;
   transition: 300ms;
+  font-weight: bold;
 
   &:hover {
     opacity: 1;
 
+  }
+
+  &:after {
+    font-size: 1.2rem !important;
   }
 }

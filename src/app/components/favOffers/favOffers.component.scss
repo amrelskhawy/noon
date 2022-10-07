@@ -1,14 +1,11 @@
-.carousel-item {
-  text-align: center;
-  height: 500px;
-  width: 100%;
-  background: #777;
-}
 
 .fav-offer-box {
-    width: 250px;
-    max-height: 350px;
+  width: 13rem;
+  max-height: 100%;
+}
 
+.swiper-favOffers {
+  height: 24rem;
 }
 
 .inst_price {
@@ -75,4 +72,5 @@
         grid-template-columns: repeat(2,1fr);
     }
 }
+
 

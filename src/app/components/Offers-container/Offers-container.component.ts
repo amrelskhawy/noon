@@ -8,14 +8,12 @@ import { MyDataService } from "src/app/services/my-data.service";
 import SwiperCore, {
   Navigation,
   Pagination,
-  Mousewheel,
-  Keyboard,
   SwiperOptions,
   Autoplay
 } from "swiper";
 
 // install Swiper modules
-SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 @Component({
   selector: 'app-offersContainer',
@@ -34,7 +32,6 @@ export class OffersContainerComponent implements OnInit {
       delay: 2000,
       disableOnInteraction: false,
     },
-
     spaceBetween: 30
   };
 
@@ -45,12 +42,7 @@ export class OffersContainerComponent implements OnInit {
     this.myDataService.getOffersData()
     .subscribe((data) => {
       this.myData = data;
-      console.log(this.myData)
     }
     )
-  }
-  slide(direction: string) {
-    const mySlider: any = document.getElementById("mySlider")
-    return direction === "right" ?  mySlider.scrollLeft += mySlider.offsetWidth:mySlider.scrollLeft -= mySlider.offsetWidth;
   }
 }
