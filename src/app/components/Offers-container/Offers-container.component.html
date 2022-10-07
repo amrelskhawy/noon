@@ -4,7 +4,24 @@
    class="ads-header w-100" alt="">
   </div>
 
-  <div *ngIf="myData && myData.getMostOrderedBranch" class="slider-wrapper position-relative">
+  <swiper
+  *ngIf="myData && myData.getMostOrderedBranch" 
+    [navigation]="true"
+    class="mySwiper"
+    [config]="config"
+    
+  >
+
+      <ng-template  id="mySlider" swiperSlide *ngFor="let offer of myData.getMostOrderedBranch.data">
+        <div class="slide  swiper-slide"  swiperSlide>
+          <img class="w-100 h-100" src="https://satatechnologygroup.net:3301/{{offer.cover}}" />
+        </div>
+      </ng-template>
+
+
+  </swiper>
+
+  <!-- <div *ngIf="myData && myData.getMostOrderedBranch" class="slider-wrapper position-relative">
     <div class="mySlider w-100 overflow-hidden position-relative" id="mySlider">
       <div class="slide w-100 h-100 text-center my-0 mx-auto d-inline-flex align-items-center justify-content-center overflow-hidden" *ngFor="let offer of myData.getMostOrderedBranch.data" swiperSlide>
         <img class="w-100 h-100" src="https://satatechnologygroup.net:3301/{{offer.cover}}" />
@@ -16,6 +33,6 @@
     <button class="slider-btn position-absolute left rounded-circle"  (click)="slide('left')">
       <img src="../../../assets/imgs/arrow.png" alt="">
     </button>
-  </div>
+  </div> -->
 
 </div>
