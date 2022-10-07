@@ -2,12 +2,19 @@
 .fav-offer-box {
   width: 13rem;
   max-height: 100%;
+  height: 80%;
 }
 
 .swiper-favOffers {
-  height: 24rem;
+  height: 24em;
 }
-
+  .swiper-wrapper {
+    height: 80%;
+  }
+.discount {
+  font-size: .9rem;
+  color: #38ae04;
+}
 .inst_price {
   position: relative;
   overflow: hidden;
@@ -23,10 +30,6 @@
     left: 50%;
     background: rgba(0, 0, 0, 0.52);
   }
-}
-
-.imgContainer {
-  min-height: 70%;
 }
 
 .icon {
@@ -47,7 +50,7 @@
 }
 .imgContainer {
     // background-color: rgba(0, 0, 0, 0.277);
-    border-radius: 15px;
+  min-height: 70%;
     cursor: pointer;
   overflow: hidden !important;
 }

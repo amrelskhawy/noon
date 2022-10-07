@@ -11,7 +11,7 @@
     [config]="config">
     <ng-template  id="mySlider" swiperSlide *ngFor="let item of bestSellers.MostSellItems.data ">
           <div  class="fav-offer-box d-flex justify-content-between flex-column flex-grow-1">
-            <div class="imgContainer rounded-4 overflow-hidden">
+            <div class="imgContainer overflow-hidden">
               <img class="img-fluid " src="https://satatechnologygroup.net:3301/{{item.menu_categories_items?.photo}}" alt="" />
             </div>
             <div class="details mt-2">
@@ -19,13 +19,16 @@
                   *ngIf="item.menu_categories_items.name !== 'علبة جبنة'">
                   {{item.menu_categories_items?.name}}
               </h5>
-              <span class="price fs-5 fw-bold">
+              <span class="price fs-4 fw-bold">
           {{item.price}}
-                <span class="fs-6 fw-normal">جنيه</span>
-        </span>
-              <span class="price d-flex align-items-center gap-1 inst_price">
-          {{item.price + (item.price * .40)}} <span>جنيه</span>
-        </span>
+                <span class="fs-5 fw-normal">جنيه</span>
+            </span>
+                  <div class="d-flex align-items-center discount gap-2  mb-2">
+                    <span class="price  gap-1 inst_price">
+              {{item.price + (item.price * .40)}}.00<span>جنيه</span>
+            </span>
+                    <span class="fw-bold">12% خصم</span>
+                  </div>
             </div>
             <div class="moreDetails d-flex justify-content-between align-items-center">
               <img src="https://f.nooncdn.com/s/app/com/noon/images/fulfilment_express_v2-ar.svg" alt="noon-express" class="sc-b51db3f-1 bGljQY"
