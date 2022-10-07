@@ -13,6 +13,7 @@ import { SwiperModule } from 'swiper/angular';
 import {OfferComponent} from "./components/offer/offer.component";
 import {CategoryComponent} from "./components/Category/Category.component";
 import {FavOffersComponent} from "./components/favOffers/favOffers.component";
+import { ContainerFavOffersComponent } from './src/components/container-fav-offers/container-fav-offers.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {FavOffersComponent} from "./components/favOffers/favOffers.component";
     OffersContainerComponent,
     OfferComponent,
     CategoryComponent,
-    FavOffersComponent
+    FavOffersComponent,
+    ContainerFavOffersComponent
   ],
   imports: [
     BrowserModule,

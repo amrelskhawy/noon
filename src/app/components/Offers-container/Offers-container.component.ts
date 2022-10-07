@@ -1,12 +1,21 @@
 import { Component, OnInit, ViewEncapsulation, ViewChild } from "@angular/core";
 import { SwiperComponent } from "swiper/angular";
 import { MyDataService } from "src/app/services/my-data.service";
+// import Swiper and modules styles
+
 
 // import Swiper core and required modules
-import SwiperCore, { Pagination, Navigation, SwiperOptions } from "swiper";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Mousewheel,
+  Keyboard,
+  SwiperOptions,
+  Autoplay
+} from "swiper";
 
 // install Swiper modules
-SwiperCore.use([Pagination, Navigation]);
+SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Autoplay]);
 
 @Component({
   selector: 'app-offersContainer',
@@ -18,14 +27,16 @@ export class OffersContainerComponent implements OnInit {
 
   config: SwiperOptions = {
     loop: true,
-    pagination: { 
-      type: 'fraction',
+    pagination: {
       clickable: true ,
     },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
 
-    
     spaceBetween: 30
-  };  
+  };
 
   myData: any;
   constructor(private myDataService: MyDataService) {}
