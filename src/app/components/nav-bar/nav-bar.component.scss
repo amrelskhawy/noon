@@ -97,11 +97,53 @@
   }
 }
 .delv {
-  width: 65px;
+  width: 75px;
 }
 
 @media (max-width: 821px) {
   .inputAndLogin {
     padding-bottom: 1rem ;
   }
+}
+
+.menu {
+  z-index: 6666;
+  right: 0;
+  gap: 5rem;
+  display: none !important;
+
+  &.show {
+    display: flex !important;
+
+  }
+  > div {
+    flex-direction: column;
+  }
+
+  span {
+
+    margin-right: 1.25rem;
+
+  }
+}
+
+
+a, span {
+  display: block;
+  padding: 0.25rem;
+  text-decoration: none;
+
+}
+
+.jsx-undefined > a {
+  color: #333;
+
+  &:hover {
+    color: #007aff;
+  }
+}
+
+.category a,
+.category span {
+  padding: 0.15rem !important;
 }

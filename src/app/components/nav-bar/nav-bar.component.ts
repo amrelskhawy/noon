@@ -71,4 +71,10 @@ export class NavBarComponent implements OnInit {
     this.newData.getOffersData().subscribe(data => this.subLinksPics = data)
   }
 
+  clickShow() {
+    let myMenu: any =  document.querySelector('.menu')
+    myMenu.classList.toggle('show')
+
+  }
+
 }
