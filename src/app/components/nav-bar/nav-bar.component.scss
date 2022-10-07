@@ -12,7 +12,10 @@
     .logoDeliverContainer {
       width: 100% !important;
     }
-
+    .inputAndLogin {
+      display: flex;
+      gap: 1rem;
+    }
     .inputContainer {
       flex: 1;
       width: 100%;
@@ -91,5 +94,14 @@
   transition: 300ms;
   &:hover {
     opacity: 0.6;
+  }
+}
+.delv {
+  width: 65px;
+}
+
+@media (max-width: 821px) {
+  .inputAndLogin {
+    padding-bottom: 1rem ;
   }
 }
