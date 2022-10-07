@@ -1,6 +1,6 @@
 <nav class="w-100 d-flex flex-column">
-    <div class="nav-top d-flex align-items-center flex-row  container-fluid justify-content-between gap-3 align-items-center">
-        <div class="d-flex justify-content-between logoDeliverContainer align-items-center gap-3 p-2">
+    <div class="nav-top d-flex align-items-center flex-row  container-fluid gap-3 align-items-center">
+        <div class="d-flex logoDeliverContainer align-items-center gap-3 p-2">
             <span class="">
                 <img src="https://f.nooncdn.com/s/app/com/noon/design-system/logos/noon-logo-ar.svg" alt="" class="noon-logo">
             </span>
@@ -13,7 +13,8 @@
             </div>
 
         </div>
-        <div class=" flex-grow-1 inputContainer">
+        <div class="d-sm-flex pb-sm-4 w-100 gap-sm-4">
+          <div class=" flex-grow-1 inputContainer">
             <input
               type="search"
               name="search"
@@ -21,74 +22,75 @@
               class="w-100 p-2"
 
             >
-        </div>
-        <div class="login-chart d-flex gap-1 py-2">
-            <span>English</span>|
+          </div>
+          <div class=" login-chart d-flex gap-1 py-2">
+            <span class="d-sm-none">English |</span>
             <span>تسجيل الدخول
                 <img class=" icon" src="../../../../../assets/imgs/user.png" alt="">
             </span>|
             <span>عربة التسوق
                 <img class="icon" src="../../../../../assets/imgs/shopping-cart.png" alt="">
             </span>
+          </div>
         </div>
     </div>
 
     <div class="nav-bottom d-flex p-3 w-100 align-items-center">
-        <span class="all-categories fw-bold text-primary ">جميع الفئات</span>
+        <span class="all-categories fw-bold text-primary mx-4">جميع الفئات</span>
 
           <span class="mx-3 d-lg-none arrow" (click)="slide('right')">
             <img class="arrow" src="../../../assets/imgs/arrow.png" />
           </span>
-        <ul class="nav-links fw-bold justify-content-lg-start  d-lg-flex gap-3 my-auto "
+        <ul class="nav-links fw-bold justify-content-lg-start  d-lg-flex my-auto "
           id="nav-bottom-container"
         >
 
-          <li class="nav-link ">الإلكترونات
+          <li class="nav-link px-3 ">الإلكترونات
                 <div class="sub-nav-link-container">
                     <Sublink [data]="electronics"></Sublink>
                 </div>
             </li>
-            <li class="nav-link">موبايلات
+            <li class="nav-link px-3">موبايلات
                 <div class="sub-nav-link-container">
                     <Sublink [data]="phones"></Sublink>
                 </div>
             </li>
-            <li class="nav-link">رجالية
+            <li class="nav-link px-3">رجالية
                 <div class="sub-nav-link-container">
                     <Sublink [data]="men"></Sublink>
                 </div>
             </li>
-            <li class="nav-link">نسائية
+            <li class="nav-link px-3">نسائية
                 <div class="sub-nav-link-container">
                     <Sublink [data]="women"></Sublink>
                 </div>
             </li>
-            <li class="nav-link">المنزل
+            <li class="nav-link px-3">المنزل
                 <div class="sub-nav-link-container">
                     <Sublink [data]="home"></Sublink>
                 </div>
             </li>
-            <li class="nav-link">الجمال و العطور
+            <li class="nav-link px-3">الجمال و العطور
                 <div class="sub-nav-link-container">
                     <Sublink [data]="men"></Sublink>
                 </div>
             </li>
-            <li class="nav-link">الاطفال و الالعاب
+            <li class="nav-link px-3">الاطفال و الالعاب
                 <div class="sub-nav-link-container">
                     <Sublink [data]="electronics"></Sublink>
                 </div>
             </li>
-            <li class="nav-link">سوبر ماركت
+            <li class="nav-link px-3">سوبر ماركت
                 <div class="sub-nav-link-container">
                     <Sublink [data]="home"></Sublink>
                 </div>
             </li>
-            <li class="nav-link">بيع في نون
+            <li class="nav-link px-3">بيع في نون
                 <div class="sub-nav-link-container">
                     <Sublink [data]="men"></Sublink>
                 </div>
             </li>
-            <li class="nav-link offers">العروض
+            <li class="nav-link px-3 offers">العروض
                 <div class="sub-nav-link-container">
                     <Sublink [data]="women"></Sublink>
                 </div>

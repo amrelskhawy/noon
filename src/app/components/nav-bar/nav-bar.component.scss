@@ -11,8 +11,6 @@
 
     .logoDeliverContainer {
       width: 100% !important;
-      justify-content: space-between !important;
-
     }
 
     .inputContainer {
@@ -43,6 +41,13 @@
   overflow: hidden;
   display: flex;
   scroll-behavior: smooth;
+
+
+  >li:hover {
+    background: #fff !important;
+    box-shadow: 0 0 1px #c9c9c9;
+
+  }
 }
 .eg-flag {
   width: 2.5rem;
@@ -78,5 +83,13 @@
       display: block;
     }
 
+  }
+}
+
+.login-chart > span {
+  cursor: pointer;
+  transition: 300ms;
+  &:hover {
+    opacity: 0.6;
   }
 }
