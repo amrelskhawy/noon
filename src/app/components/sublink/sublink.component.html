@@ -1,7 +1,7 @@
 <div class="sub-nav-link position-absolute d-flex flex-row  bg-white pt-4">
     <ul class="sub-nav-link-container py-2 d-flex flex-column gap-2 px-4 mb-3">
         <h4 class="fw-bold">الفئات</h4>
-        <li class="nav-link" *ngFor="let item of data">
+        <li class="nav-link link " *ngFor="let item of data">
             <a href="" class="text-decoration-none text-dark fw-normal">{{item}}</a>
         </li>
     </ul>
@@ -9,13 +9,8 @@
         <h4 class="fw-bold mb-4">أفضل الماركات</h4>
         <div class="all-pics">
             <div class="pics-container d-grid gap-2 justify-content-between">
-                <div class="imgContainer" *ngFor="let pic of pics" >
-                    <img  src="{{pic}}" class="100 h-100" alt="">
-                </div>
-            </div>
-            <div class="examples">
-                <div class="imgContainer">
-
+                <div class="imgContainer border border-1 d-flex justify-content-center" *ngFor="let pic of pics" >
+                    <img  src="{{pic}}" class="w-75 h-100" alt="">
                 </div>
             </div>
         </div>

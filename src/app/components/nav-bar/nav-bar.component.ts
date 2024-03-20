@@ -64,11 +64,17 @@ export class NavBarComponent implements OnInit {
 
   slide = (orientation: any) => {
     const slider = document.getElementById(`nav-bottom-container`)
-    slider!.scrollLeft = orientation === 'right' ? slider!.scrollLeft + 200 : slider!.scrollLeft - 200
+    slider!.scrollLeft = orientation === 'right' ? slider!.scrollLeft + 600 : slider!.scrollLeft - 600
   }
 
   ngOnInit(): void {
     this.newData.getOffersData().subscribe(data => this.subLinksPics = data)
+  }
+
+  clickShow() {
+    let myMenu: any =  document.querySelector('.menu')
+    myMenu.classList.toggle('show')
+
   }
 
 }
